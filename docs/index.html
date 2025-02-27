@@ -15,7 +15,7 @@
         }
 
         h1, h2 {
-            color: #ff467e;
+            color: #40E0D0; /* Turquoise color */
         }
 
         a {
@@ -151,13 +151,41 @@
             border-radius: 5px;
             font-weight: bold;
         }
+
+        .badge {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #40E0D0; /* Turquoise color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff467e;
+        }
     </style>
 </head>
 <body>
     <!-- Landing Page -->
     <section id="landing">
         <h1>Burak Ozdemir</h1>
-        <p>Software & Petroleum Engineer | Full-Stack Developer</p>
+         <p>Passionate about software engineering, petroleum technology, and problem-solving. Former directional drilling engineer turned full-stack developer.</p>
         <div class="icons">
             <a href="https://www.linkedin.com/in/burak-%C3%B6zdemir-64a2a9317/" target="_blank">🔗 LinkedIn</a>
             <a href="https://github.com/burakoncuy" target="_blank">🐱 GitHub</a>
@@ -167,12 +195,10 @@
 
     <!-- About Section -->
     <section id="about">
-        <img src="https://drive.google.com/file/d/1nmoz65y1m8I4aQnBInZwf6V-EEIOqaa2/view?usp=drive_link" alt="Burak Ozdemir"> <!-- Replace with your image URL -->
+        <img src="https://drive.google.com/file/d/1nmoz65y1m8I4aQnBInZwf6V-EEIOqaa2/view?usp=sharing" alt="Burak Ozdemir"> <!-- Replace with your image URL -->
         <div class="bio">
             <h2>About Me</h2>
-            <p>Passionate about software engineering, petroleum technology, and problem-solving. Former directional drilling engineer turned full-stack developer.</p>
-
-
+            <p>I'm a software engineer with a background in petroleum engineering who successfully transitioned careers. My foundation in problem-solving was initially built in the oil and gas industry, where I applied my bachelor's degree in petroleum engineering. I've since evolved my expertise to include data structures, algorithms, and hands-on experience building web applications. This career change has complemented my love for traveling, experiencing different cultures and cuisines, and gaining fresh perspectives - skills that have proven valuable in both engineering disciplines.</p>
             <a href="https://drive.google.com/file/d/1O2Y7BCyC0e9XO-pWo--ZEWE-MGE6CjWO/view?usp=sharing" class="btn" target="_blank">Download My Resume</a>
         </div>
     </section>
@@ -190,29 +216,33 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-         <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Backhand%20Index%20Pointing%20Down%20Medium-Light%20Skin%20Tone.png" alt="Backhand Index Pointing Down Medium-Light Skin Tone" width="25" height="25" /> Technologies 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-        </ul>
+        <div>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">Flask</span>
+            <span class="badge">Express.js</span>
+            <span class="badge">React</span>
+            <span class="badge">Redux</span>
+            <span class="badge">Postgres</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">AWS</span>
+            <span class="badge">VS Code</span>
+            <span class="badge">Sequelize</span>
+            <span class="badge">SQLite</span>
+            <span class="badge">Postman</span>
+            <span class="badge">GitHub</span>
+            <span class="badge">NPM</span>
+            <span class="badge">Vite</span>
+            <span class="badge">Render</span>
+            <span class="badge">Docker</span>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by <a href="https://github.com/burakoncuy" target="_blank">Burak Ozdemir</a></p>
+    </footer>
 </body>
 </html>
