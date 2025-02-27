@@ -5,67 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burak Ozdemir | Portfolio</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff7eb3);
-            color: white;
-            text-align: center;
             margin: 0;
             padding: 0;
+            color: #333;
+            background: #f9f9f9;
         }
-        .container {
-            padding: 50px;
+
+        h1, h2 {
+            color: #ff467e;
         }
-        h1 {
-            font-size: 3rem;
-        }
-        .links a, .resume-link {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background: #fff;
-            color: #ff758c;
+
+        a {
             text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
+            color: #ff467e;
         }
-        .links a:hover, .resume-link:hover {
+
+        a:hover {
+            color: #ff7eb3;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        /* Landing Page */
+        #landing {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #landing h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        #landing p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        #landing .icons a {
+            margin: 0 10px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        #landing .icons a:hover {
+            color: #ff467e;
+        }
+
+        #landing .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: #ff758c;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        #landing .btn:hover {
             background: #ff467e;
             color: white;
         }
-        .section {
-            margin: 40px 0;
+
+        /* About Section */
+        #about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #about img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #ff467e;
+        }
+
+        #about .bio {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        #about .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff467e;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        #about .btn:hover {
+            background: #ff7eb3;
+        }
+
+        /* Projects Section */
+        #projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #projects ul li {
+            margin: 20px 0;
+        }
+
+        #projects ul li a {
+            font-size: 1.2rem;
+        }
+
+        /* Skills Section */
+        #skills {
+            background: #ff758c;
+            color: white;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #skills ul li {
+            background: white;
+            color: #ff467e;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Landing Page -->
+    <section id="landing">
         <h1>Burak Ozdemir</h1>
-        <p>Software & Petroleum Engineer | Full-Stack Developer | Ex-Directional Drilling Engineer</p>
-        
-        <div class="links">
-            <a href="https://www.linkedin.com/in/burak-%C3%B6zdemir-64a2a9317/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/burakoncuy" target="_blank">GitHub</a>
+        <p>Software & Petroleum Engineer | Full-Stack Developer</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/burak-%C3%B6zdemir-64a2a9317/" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/burakoncuy" target="_blank">🐱 GitHub</a>
         </div>
-        
-        <div class="section">
+        <a href="#about" class="btn">More About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="https://via.placeholder.com/200" alt="Burak Ozdemir"> <!-- Replace with your image URL -->
+        <div class="bio">
             <h2>About Me</h2>
             <p>Passionate about software engineering, petroleum technology, and problem-solving. Former directional drilling engineer turned full-stack developer.</p>
+            <a href="https://drive.google.com/file/d/1O2Y7BCyC0e9XO-pWo--ZEWE-MGE6CjWO/view?usp=sharing" class="btn" target="_blank">Download My Resume</a>
         </div>
-        
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://nowjersey.onrender.com/" target="_blank">NowJersey</a></li>
-                <li><a href="https://nomnow-75lb.onrender.com/" target="_blank">NomNow</a></li>
-                <li><a href="https://lodging.onrender.com/" target="_blank">Lodging</a></li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Resume</h2>
-            <a href="https://drive.google.com/file/d/1O2Y7BCyC0e9XO-pWo--ZEWE-MGE6CjWO/view?usp=sharing" class="resume-link" target="_blank">Download My Resume</a>
-        </div>
-    </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://nowjersey.onrender.com/" target="_blank">NowJersey</a></li>
+            <li><a href="https://nomnow-75lb.onrender.com/" target="_blank">NomNow</a></li>
+            <li><a href="https://lodging.onrender.com/" target="_blank">Lodging</a></li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>Petroleum Engineering</li>
+            <li>Full-Stack Development</li>
+        </ul>
+    </section>
 </body>
 </html>
