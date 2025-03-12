@@ -1,4 +1,214 @@
-<!-- Projects Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burak Ozdemir | Portfolio</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        h1, h2 {
+            color: #40E0D0; /* Turquoise color */
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff467e;
+        }
+
+        a:hover {
+            color: #ff7eb3;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        /* Landing Page */
+        #landing {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #landing h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        #landing p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        #landing .icons a {
+            margin: 0 10px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        #landing .icons a:hover {
+            color: #ff467e;
+        }
+
+        #landing .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: #ff758c;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        #landing .btn:hover {
+            background: #ff467e;
+            color: white;
+        }
+
+        /* About Section */
+        #about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #about img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #ff467e;
+        }
+
+        #about .bio {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        #about .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff467e;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        #about .btn:hover {
+            background: #ff7eb3;
+        }
+
+        /* Projects Section */
+        #projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #projects ul li {
+            margin: 20px 0;
+        }
+
+        #projects ul li a {
+            font-size: 1.2rem;
+        }
+
+        /* Skills Section */
+        #skills {
+            background: #ff758c;
+            color: white;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #skills ul li {
+            background: white;
+            color: #ff467e;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #40E0D0; /* Turquoise color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff467e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing">
+        <h1>Burak Ozdemir</h1>
+        <p>Passionate Software Developer with a Petroleum Engineering background. </p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/burak-%C3%B6zdemir-64a2a9317/" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/burakoncuy" target="_blank">🐱 GitHub</a>
+        </div>
+        <a href="#about" class="btn">More About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="./Image.png" alt="Burak Ozdemir"> <!-- Replace with your image URL -->
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>As a software engineer with a background in petroleum engineering, I bring a unique blend of technical expertise and problem-solving skills to the development of clean, user-centric software solutions. My experience in the energy sector has instilled in me a rigorous approach to analytical thinking and a deep understanding of complex systems, which I now apply to crafting intuitive and impactful digital experiences. Passionate about leveraging technology to drive innovation and improve lives, I am committed to building robust, elegant, and user-friendly software that delivers meaningful value to its users.</p>
+            <a href="https://drive.google.com/file/d/1O2Y7BCyC0e9XO-pWo--ZEWE-MGE6CjWO/view?usp=sharing" class="btn" target="_blank">Download My Resume</a>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
 <section id="projects">
     <h2>Projects</h2>
 
@@ -160,3 +370,38 @@
         }
     }
 </script>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3"></i> CSS3</li>
+            <li><i class="fas fa-flask"></i> Flask</li>
+            <li><i class="fab fa-node-js"></i> Express.js</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fas fa-code-branch"></i> Redux</li>
+            <li><i class="fas fa-database"></i> Postgres</li>
+            <li><i class="fab fa-node"></i> Node.js</li>
+            <li><i class="fab fa-aws"></i> AWS</li>
+            <li><i class="fas fa-code"></i> VS Code</li>
+            <li><i class="fas fa-database"></i> Sequelize</li>
+            <li><i class="fas fa-database"></i> SQLite</li>
+            <li><i class="fas fa-toolbox"></i> Postman</li>
+            <li><i class="fab fa-github"></i> GitHub</li>
+            <li><i class="fab fa-npm"></i> NPM</li>
+            <li><i class="fas fa-bolt"></i> Vite</li>
+            <li><i class="fas fa-server"></i> Render</li>
+            <li><i class="fab fa-docker"></i> Docker</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by <a href="https://github.com/burakoncuy" target="_blank">Burak Ozdemir</a></p>
+    </footer>
+</body>
+</html>
