@@ -209,14 +209,71 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://nowjersey.onrender.com/" target="_blank">NowJersey</a></li>
-            <li><a href="https://nomnow-qtk7.onrender.com" target="_blank">NomNow</a></li>
-            <li><a href="https://lodging.onrender.com/" target="_blank">Lodging</a></li>
-        </ul>
-    </section>
+<section id="projects">
+    <h2>Projects</h2>
+
+    <!-- NowJersey Project -->
+    <div class="project">
+        <h3><a href="https://nowjersey.onrender.com/" target="_blank">NowJersey</a></h3>
+        <p>A marketplace for buying and selling sports jerseys.</p>
+        <div class="project-gallery">
+            <img src="./images/nowjersey1.png" alt="NowJersey Screenshot 1">
+            <img src="./images/nowjersey2.png" alt="NowJersey Screenshot 2">
+            <img src="./images/nowjersey3.png" alt="NowJersey Screenshot 3">
+        </div>
+    </div>
+
+    <!-- NomNow Project -->
+    <div class="project">
+        <h3><a href="https://nomnow-qtk7.onrender.com" target="_blank">NomNow</a></h3>
+        <p>Food delivery platform inspired by UberEats.</p>
+        <div class="project-gallery">
+            <img src="./images/nomnow1.png" alt="NomNow Screenshot 1">
+            <img src="./images/nomnow2.png" alt="NomNow Screenshot 2">
+            <img src="./images/nomnow3.png" alt="NomNow Screenshot 3">
+        </div>
+    </div>
+
+    <!-- Lodging Project -->
+    <div class="project">
+        <h3><a href="https://lodging.onrender.com/" target="_blank">Lodging</a></h3>
+        <p>An Airbnb-inspired booking platform.</p>
+        <div class="project-gallery">
+            <img src="./images/lodging1.png" alt="Lodging Screenshot 1">
+            <img src="./images/lodging2.png" alt="Lodging Screenshot 2">
+            <img src="./images/lodging3.png" alt="Lodging Screenshot 3">
+        </div>
+    </div>
+</section>
+
+<!-- CSS for Project Gallery -->
+<style>
+    .project {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .project-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .project-gallery img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .project-gallery img:hover {
+        transform: scale(1.05);
+    }
+</style>
+
 
     <!-- Skills Section -->
     <section id="skills">
