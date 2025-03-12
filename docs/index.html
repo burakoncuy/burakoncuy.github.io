@@ -184,6 +184,83 @@
         footer a:hover {
             color: #ff467e;
         }
+
+        /* Project Gallery Styles */
+        .project {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .project-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .project-gallery img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .project-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .lightbox .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .lightbox .arrow.left {
+            left: 20px;
+        }
+
+        .lightbox .arrow.right {
+            right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -208,169 +285,51 @@
         </div>
     </section>
 
-   <!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
 
-    <!-- NowJersey Project -->
-    <div class="project">
-        <h3><a href="https://nowjersey.onrender.com/" target="_blank">NowJersey</a></h3>
-        <p>A marketplace for buying and selling sports jerseys.</p>
-        <div class="project-gallery">
-            <img src="./splash.png" alt="NowJersey Screenshot 1" onclick="openModal('nowjersey', 0)">
-            <img src="./manage.png" alt="NowJersey Screenshot 2" onclick="openModal('nowjersey', 1)">
-            <img src="./detail.png" alt="NowJersey Screenshot 3" onclick="openModal('nowjersey', 2)">
+        <!-- NowJersey Project -->
+        <div class="project">
+            <h3><a href="https://nowjersey.onrender.com/" target="_blank">NowJersey</a></h3>
+            <p>A marketplace for buying and selling sports jerseys.</p>
+            <div class="project-gallery">
+                <img src="./splash.png" alt="NowJersey Screenshot 1" data-project="nowjersey" data-index="0">
+                <img src="./manage.png" alt="NowJersey Screenshot 2" data-project="nowjersey" data-index="1">
+                <img src="./detail.png" alt="NowJersey Screenshot 3" data-project="nowjersey" data-index="2">
+            </div>
         </div>
-    </div>
 
-    <!-- NomNow Project -->
-    <div class="project">
-        <h3><a href="https://nomnow-qtk7.onrender.com" target="_blank">NomNow</a></h3>
-        <p>Food delivery platform inspired by UberEats.</p>
-        <div class="project-gallery">
-            <img src="./restaurants.png" alt="NomNow Screenshot 1" onclick="openModal('nomnow', 0)">
-            <img src="./menu-items.png" alt="NomNow Screenshot 2" onclick="openModal('nomnow', 1)">
-            <img src="./past-orders.png" alt="NomNow Screenshot 3" onclick="openModal('nomnow', 2)">
+        <!-- NomNow Project -->
+        <div class="project">
+            <h3><a href="https://nomnow-qtk7.onrender.com" target="_blank">NomNow</a></h3>
+            <p>Food delivery platform inspired by UberEats.</p>
+            <div class="project-gallery">
+                <img src="./restaurants.png" alt="NomNow Screenshot 1" data-project="nomnow" data-index="0">
+                <img src="./menu-items.png" alt="NomNow Screenshot 2" data-project="nomnow" data-index="1">
+                <img src="./past-orders.png" alt="NomNow Screenshot 3" data-project="nomnow" data-index="2">
+            </div>
         </div>
-    </div>
 
-    <!-- Lodging Project -->
-    <div class="project">
-        <h3><a href="https://lodging.onrender.com/" target="_blank">Lodging</a></h3>
-        <p>An Airbnb-inspired booking platform.</p>
-        <div class="project-gallery">
-            <img src="./Screenshot1.png" alt="Lodging Screenshot 1" onclick="openModal('lodging', 0)">
-            <img src="./Screenshot2.png" alt="Lodging Screenshot 2" onclick="openModal('lodging', 1)">
-            <img src="./Screenshot3.png" alt="Lodging Screenshot 3" onclick="openModal('lodging', 2)">
+        <!-- Lodging Project -->
+        <div class="project">
+            <h3><a href="https://lodging.onrender.com/" target="_blank">Lodging</a></h3>
+            <p>An Airbnb-inspired booking platform.</p>
+            <div class="project-gallery">
+                <img src="./landing.png" alt="Lodging Screenshot 1" data-project="lodging" data-index="0">
+                <img src="./villa.png" alt="Lodging Screenshot 2" data-project="lodging" data-index="1">
+                <img src="./pool.png" alt="Lodging Screenshot 3" data-project="lodging" data-index="2">
+            </div>
         </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="close-lightbox">&times;</span>
+        <span class="arrow left" id="prev-image">&#10094;</span>
+        <span class="arrow right" id="next-image">&#10095;</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
     </div>
-</section>
-
-<!-- Lightbox Modal -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImage">
-    <div class="prev" onclick="changeImage(-1)">&#10094;</div>
-    <div class="next" onclick="changeImage(1)">&#10095;</div>
-</div>
-
-<!-- CSS for Project Gallery & Modal -->
-<style>
-    .project {
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
-    .project-gallery {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-top: 10px;
-    }
-
-    .project-gallery img {
-        width: 250px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-        cursor: pointer;
-    }
-
-    .project-gallery img:hover {
-        transform: scale(1.05);
-    }
-
-    /* Modal Styles */
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .modal-content {
-        max-width: 80%;
-        max-height: 80%;
-        border-radius: 10px;
-    }
-
-    .close {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
-    }
-
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
-        transform: translateY(-50%);
-        padding: 10px;
-    }
-
-    .prev {
-        left: 10px;
-    }
-
-    .next {
-        right: 10px;
-    }
-</style>
-
-<!-- JavaScript for Lightbox -->
-<script>
-    const projectImages = {
-        nowjersey: ["./splash.png", "./manage.png", "./detail.png"],
-        nomnow: ["./restaurants.png", "./menu-items.png", "./past-orders.png"],
-        lodging: ["./Screenshot1.png", "./Screenshot2.png", "./Screenshot3.png"]
-    };
-
-    let currentProject = "";
-    let currentIndex = 0;
-
-    function openModal(project, index) {
-        currentProject = project;
-        currentIndex = index;
-        document.getElementById("modalImage").src = projectImages[project][index];
-        document.getElementById("imageModal").style.display = "flex";
-    }
-
-    function closeModal() {
-        document.getElementById("imageModal").style.display = "none";
-    }
-
-    function changeImage(direction) {
-        currentIndex += direction;
-        if (currentIndex < 0) {
-            currentIndex = projectImages[currentProject].length - 1;
-        } else if (currentIndex >= projectImages[currentProject].length) {
-            currentIndex = 0;
-        }
-        document.getElementById("modalImage").src = projectImages[currentProject][currentIndex];
-    }
-
-    // Close modal on outside click
-    window.onclick = function(event) {
-        if (event.target.classList.contains("modal")) {
-            closeModal();
-        }
-    }
-</script>
-
 
     <!-- Skills Section -->
     <section id="skills">
@@ -403,5 +362,53 @@
     <footer>
         <p>Designed by <a href="https://github.com/burakoncuy" target="_blank">Burak Ozdemir</a></p>
     </footer>
+
+    <script>
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeLightbox = document.getElementById('close-lightbox');
+        const prevImage = document.getElementById('prev-image');
+        const nextImage = document.getElementById('next-image');
+
+        let currentProject = null;
+        let currentIndex = 0;
+        let images = [];
+
+        // Open lightbox
+        document.querySelectorAll('.project-gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                currentProject = img.getAttribute('data-project');
+                currentIndex = parseInt(img.getAttribute('data-index'));
+                images = Array.from(document.querySelectorAll(`.project-gallery img[data-project="${currentProject}"]`));
+                lightboxImg.src = images[currentIndex].src;
+                lightbox.classList.add('active');
+            });
+        });
+
+        // Close lightbox
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        // Navigate to previous image
+        prevImage.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            lightboxImg.src = images[currentIndex].src;
+        });
+
+        // Navigate to next image
+        nextImage.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            lightboxImg.src = images[currentIndex].src;
+        });
+
+        // Close lightbox on clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
