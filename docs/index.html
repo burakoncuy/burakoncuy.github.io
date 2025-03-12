@@ -1,214 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burak Ozdemir | Portfolio</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background: #f9f9f9;
-        }
-
-        h1, h2 {
-            color: #40E0D0; /* Turquoise color */
-        }
-
-        a {
-            text-decoration: none;
-            color: #ff467e;
-        }
-
-        a:hover {
-            color: #ff7eb3;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        /* Landing Page */
-        #landing {
-            background: linear-gradient(135deg, #ff7eb3, #ff758c);
-            color: white;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        #landing h1 {
-            font-size: 4rem;
-            margin: 0;
-        }
-
-        #landing p {
-            font-size: 1.5rem;
-            margin: 10px 0;
-        }
-
-        #landing .icons a {
-            margin: 0 10px;
-            font-size: 2rem;
-            color: white;
-        }
-
-        #landing .icons a:hover {
-            color: #ff467e;
-        }
-
-        #landing .btn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: white;
-            color: #ff758c;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        #landing .btn:hover {
-            background: #ff467e;
-            color: white;
-        }
-
-        /* About Section */
-        #about {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        #about img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border: 5px solid #ff467e;
-        }
-
-        #about .bio {
-            max-width: 600px;
-            text-align: left;
-        }
-
-        #about .btn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #ff467e;
-            color: white;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        #about .btn:hover {
-            background: #ff7eb3;
-        }
-
-        /* Projects Section */
-        #projects ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        #projects ul li {
-            margin: 20px 0;
-        }
-
-        #projects ul li a {
-            font-size: 1.2rem;
-        }
-
-        /* Skills Section */
-        #skills {
-            background: #ff758c;
-            color: white;
-        }
-
-        #skills ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        #skills ul li {
-            background: white;
-            color: #ff467e;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .badge {
-            display: inline-block;
-            margin: 5px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            background: #333;
-            color: white;
-            font-size: 0.9rem;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 1rem;
-        }
-
-        footer a {
-            color: #40E0D0; /* Turquoise color */
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ff467e;
-        }
-    </style>
-</head>
-<body>
-    <!-- Landing Page -->
-    <section id="landing">
-        <h1>Burak Ozdemir</h1>
-        <p>Passionate Software Developer with a Petroleum Engineering background. </p>
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/burak-%C3%B6zdemir-64a2a9317/" target="_blank">🔗 LinkedIn</a>
-            <a href="https://github.com/burakoncuy" target="_blank">🐱 GitHub</a>
-        </div>
-        <a href="#about" class="btn">More About Me</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <img src="./Image.png" alt="Burak Ozdemir"> <!-- Replace with your image URL -->
-        <div class="bio">
-            <h2>About Me</h2>
-            <p>As a software engineer with a background in petroleum engineering, I bring a unique blend of technical expertise and problem-solving skills to the development of clean, user-centric software solutions. My experience in the energy sector has instilled in me a rigorous approach to analytical thinking and a deep understanding of complex systems, which I now apply to crafting intuitive and impactful digital experiences. Passionate about leveraging technology to drive innovation and improve lives, I am committed to building robust, elegant, and user-friendly software that delivers meaningful value to its users.</p>
-            <a href="https://drive.google.com/file/d/1O2Y7BCyC0e9XO-pWo--ZEWE-MGE6CjWO/view?usp=sharing" class="btn" target="_blank">Download My Resume</a>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
+<!-- Projects Section -->
 <section id="projects">
     <h2>Projects</h2>
 
@@ -217,9 +7,9 @@
         <h3><a href="https://nowjersey.onrender.com/" target="_blank">NowJersey</a></h3>
         <p>A marketplace for buying and selling sports jerseys.</p>
         <div class="project-gallery">
-            <img src="./splash.png" alt="NowJersey Screenshot 1">
-            <img src="./manage.png" alt="NowJersey Screenshot 2">
-            <img src="./detail.png" alt="NowJersey Screenshot 3">
+            <img src="./splash.png" alt="NowJersey Screenshot 1" onclick="openModal('nowjersey', 0)">
+            <img src="./manage.png" alt="NowJersey Screenshot 2" onclick="openModal('nowjersey', 1)">
+            <img src="./detail.png" alt="NowJersey Screenshot 3" onclick="openModal('nowjersey', 2)">
         </div>
     </div>
 
@@ -228,9 +18,9 @@
         <h3><a href="https://nomnow-qtk7.onrender.com" target="_blank">NomNow</a></h3>
         <p>Food delivery platform inspired by UberEats.</p>
         <div class="project-gallery">
-            <img src="./restaurants.png" alt="NomNow Screenshot 1">
-            <img src="./menu-items.png" alt="NomNow Screenshot 2">
-            <img src="./past-orders.png" alt="NomNow Screenshot 3">
+            <img src="./restaurants.png" alt="NomNow Screenshot 1" onclick="openModal('nomnow', 0)">
+            <img src="./menu-items.png" alt="NomNow Screenshot 2" onclick="openModal('nomnow', 1)">
+            <img src="./past-orders.png" alt="NomNow Screenshot 3" onclick="openModal('nomnow', 2)">
         </div>
     </div>
 
@@ -239,14 +29,22 @@
         <h3><a href="https://lodging.onrender.com/" target="_blank">Lodging</a></h3>
         <p>An Airbnb-inspired booking platform.</p>
         <div class="project-gallery">
-            <img src="./Screenshot 2025-03-12 at 1.08.04 PM.png" alt="Lodging Screenshot 1">
-            <img src="./Screenshot 2025-03-12 at 1.09.04 PM.png" alt="Lodging Screenshot 2">
-            <img src="./Screenshot 2025-03-12 at 1.09.48 PM.png" alt="Lodging Screenshot 3">
+            <img src="./Screenshot1.png" alt="Lodging Screenshot 1" onclick="openModal('lodging', 0)">
+            <img src="./Screenshot2.png" alt="Lodging Screenshot 2" onclick="openModal('lodging', 1)">
+            <img src="./Screenshot3.png" alt="Lodging Screenshot 3" onclick="openModal('lodging', 2)">
         </div>
     </div>
 </section>
 
-<!-- CSS for Project Gallery -->
+<!-- Lightbox Modal -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="prev" onclick="changeImage(-1)">&#10094;</div>
+    <div class="next" onclick="changeImage(1)">&#10095;</div>
+</div>
+
+<!-- CSS for Project Gallery & Modal -->
 <style>
     .project {
         margin-bottom: 50px;
@@ -267,44 +65,98 @@
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease-in-out;
+        cursor: pointer;
     }
 
     .project-gallery img:hover {
         transform: scale(1.05);
     }
+
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 10px;
+    }
+
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        transform: translateY(-50%);
+        padding: 10px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
 </style>
 
+<!-- JavaScript for Lightbox -->
+<script>
+    const projectImages = {
+        nowjersey: ["./splash.png", "./manage.png", "./detail.png"],
+        nomnow: ["./restaurants.png", "./menu-items.png", "./past-orders.png"],
+        lodging: ["./Screenshot1.png", "./Screenshot2.png", "./Screenshot3.png"]
+    };
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><i class="fab fa-js"></i> JavaScript</li>
-            <li><i class="fab fa-python"></i> Python</li>
-            <li><i class="fab fa-html5"></i> HTML5</li>
-            <li><i class="fab fa-css3"></i> CSS3</li>
-            <li><i class="fas fa-flask"></i> Flask</li>
-            <li><i class="fab fa-node-js"></i> Express.js</li>
-            <li><i class="fab fa-react"></i> React</li>
-            <li><i class="fas fa-code-branch"></i> Redux</li>
-            <li><i class="fas fa-database"></i> Postgres</li>
-            <li><i class="fab fa-node"></i> Node.js</li>
-            <li><i class="fab fa-aws"></i> AWS</li>
-            <li><i class="fas fa-code"></i> VS Code</li>
-            <li><i class="fas fa-database"></i> Sequelize</li>
-            <li><i class="fas fa-database"></i> SQLite</li>
-            <li><i class="fas fa-toolbox"></i> Postman</li>
-            <li><i class="fab fa-github"></i> GitHub</li>
-            <li><i class="fab fa-npm"></i> NPM</li>
-            <li><i class="fas fa-bolt"></i> Vite</li>
-            <li><i class="fas fa-server"></i> Render</li>
-            <li><i class="fab fa-docker"></i> Docker</li>
-        </ul>
-    </section>
+    let currentProject = "";
+    let currentIndex = 0;
 
-    <!-- Footer -->
-    <footer>
-        <p>Designed by <a href="https://github.com/burakoncuy" target="_blank">Burak Ozdemir</a></p>
-    </footer>
-</body>
-</html>
+    function openModal(project, index) {
+        currentProject = project;
+        currentIndex = index;
+        document.getElementById("modalImage").src = projectImages[project][index];
+        document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+
+    function changeImage(direction) {
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = projectImages[currentProject].length - 1;
+        } else if (currentIndex >= projectImages[currentProject].length) {
+            currentIndex = 0;
+        }
+        document.getElementById("modalImage").src = projectImages[currentProject][currentIndex];
+    }
+
+    // Close modal on outside click
+    window.onclick = function(event) {
+        if (event.target.classList.contains("modal")) {
+            closeModal();
+        }
+    }
+</script>
